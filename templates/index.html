@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>security camera</title>
+     <style>
+          .container{
+               margin: 0;
+               padding: 0;
+               width: 100%;
+               height: 100vh;
+               background-color: #E2D8F8;
+               color: black;
+               text-align: center;
+          }
+     </style>
+</head>
+<body class = "container">
+     <! -- the content for h1 can be changed as you will. Here I named it "Roney...", but it's up to you -->
+     <h1>Roney Video Surveillance Systems</h1>
+     <img src="{{ url_for('video') }}">
+     <form method="post" action="/">
+          <input type="submit" name="<" value="<"/>
+          <input type="submit" name="center" value="center"/>
+          <input type="submit" name=">" value=">"/>
+          <p>Person Detector:
+               <input type="submit" name="Enable" value="True"/>
+               <input type="submit" name="Disable" value="False"/>
+               <a>{{files}}</a>
+          </p>
+     </form>
+
+</body>
+</html>
